@@ -74,10 +74,16 @@ str.title（） 返回标题的字符串形式，其中单词以大写字母开�
 ```
 str.lstrip（[字符]） 返回删除了前导字符的字符串的副本。如果省略或None，则字符参数默认为删除空格。该字符参数不是前缀; 而是删除其值的所有组合。
 ```python
-   >>> a='hello world!'
-   >>> a.lstrip('he')
+   >>> str_3='hello world!'
+   >>> str_3.lstrip('he')
    'llo world!'
-   >>> a.lstrip('eh')
+   >>> str_3.lstrip('eh')
    'llo world!'
+   
+   >>> str_4="  hello world!  "
+   >>> str_4.lstrip()
+   'hello world!
+   >>> str_4.lstrip(None)
+   'hello world!  '
 ```
 
