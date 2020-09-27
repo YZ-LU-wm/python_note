@@ -64,7 +64,7 @@
    1
 ```
 ## 2 字符串类型
-### 2.1 字符串的创建
+### 2.1.1字符串的创建
 python中字符串的创建非常简单，如前面所述，python中数据类型不需要使用关键字进行说明，相反，python中用英文单引号`''`和双引号`""`进行标识。在交互式解释器中，输出字符串用引号引起来，特殊字符用反斜杠转义。下面是一些简单的例子：
 ```python
    >>> str_1='Hi'
@@ -74,13 +74,32 @@ python中字符串的创建非常简单，如前面所述，python中数据类�
    >>> print(str_2)
    你好！
 ```
+### 2.1.2在有转义字符的字符串中使用原字符意思。<br>
 如果不希望将开头的字符`\`解释为特殊字符(转义字符），则可以通过在第一引号之前添加一个原始字符串`r`来使用原始字符串。
 ```python
-   >>> print('C:\some\name')  # here \n means newline!
-   C:\some
-   ame
-   >>> print(r'C:\some\name')  # note the r before the quote
-   C:\some\name
+   >>> print('hello\nrunoob')
+   hello
+   runoob
+   >>> print(r'hello\nrunoob')
+   hello\nrunoob
+```
+### 2.1.3 字符串的跨行表示
+如果字符串太长，一行不能完全显示，或超过了PEP的建议，可以使用多行字符串显示。字符串跨越多行用三引号：`"""......"""`或`'''......'''`来表示。如以下例子：
+```python
+   >>> print("""\
+   ... gdfgdf
+   ... ggggg
+   ... """)
+   gdfgdf
+   ggggg
+
+   >>> print("""
+   ... ggfg
+   ... ggfdg\
+   ... """)
+
+   ggfg
+   ggfdg
 ```
 ### 2.2 对字符串的一些简单操作
 str.lower（） 返回字符串的副本，并将所有大小写的字符转换为小写。<br>
