@@ -1,4 +1,4 @@
-<font face="微软雅黑" size="5"><p align="center">**Python程序设计**</p></font>
+<font face="微软雅黑" size="5"><h1>**Python程序设计**</h1></font>
 h1 tezsg
 ## 1 数字类型
 ### 1.1 整数
